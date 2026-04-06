@@ -54,9 +54,12 @@ export const useKids = () => {
 
   const deleteKid = (kidId: string): void => {
     setState(prev => {
-      const { [kidId]: _, ...remainingKids } = prev.goals;
-      const { [kidId]: __, ...remainingDaily } = prev.dailyRecords;
-      const { [kidId]: ___, ...remainingRewards } = prev.rewards;
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      const { [kidId]: _removedKid, ...remainingKids } = prev.goals;
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      const { [kidId]: _removedDaily, ...remainingDaily } = prev.dailyRecords;
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      const { [kidId]: _removedRewards, ...remainingRewards } = prev.rewards;
 
       return {
         ...prev,

@@ -1,4 +1,4 @@
-import { LearningGoal, DailyRecord, Reward } from '../types';
+import type { LearningGoal, DailyRecord, Reward } from '../types';
 
 export const calculateTotalScore = (
   goals: LearningGoal[],

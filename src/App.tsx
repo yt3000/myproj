@@ -40,7 +40,7 @@ function App() {
                   const imported = await importData(file);
                   setState(imported);
                   alert('导入成功！');
-                } catch (err) {
+                } catch {
                   alert('导入失败，请检查文件格式');
                 }
               }

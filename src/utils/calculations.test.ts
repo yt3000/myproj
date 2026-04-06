@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { calculateTotalScore, getAvailableRewards } from './calculations';
-import { LearningGoal, DailyRecord, Reward } from '../types';
+import type { LearningGoal, DailyRecord, Reward } from '../types';
 
 describe('Score calculation utilities', () => {
   describe('calculateTotalScore', () => {

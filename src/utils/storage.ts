@@ -1,4 +1,4 @@
-import { AppState, Kid, LearningGoal, DailyRecord, Reward } from '../types';
+import type { AppState } from '../types';
 
 const STORAGE_KEY = 'multiKidRewardSystem';
 
