@@ -1,4 +1,3 @@
-import { useCallback } from 'react';
 import { AppState, LearningGoal, DailyRecord, Reward } from '../types';
 
 export const useRecords = (
