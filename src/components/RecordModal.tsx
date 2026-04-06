@@ -104,7 +104,7 @@ export const RecordModal = ({ isOpen, kidName, onClose, onAdd }: RecordModalProp
             <input
               type="number"
               value={points}
-              onChange={(e) => setPoints(parseInt(e.target.value))}
+              onChange={(e) => setPoints(parseInt(e.target.value) || 0)}
               className="w-full border rounded px-3 py-2"
               required
             />
