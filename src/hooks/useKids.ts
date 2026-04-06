@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Kid, AppState } from '../types';
+import type { Kid, AppState } from '../types';
 import { loadState, saveState, getDefaultState } from '../utils/storage';
 import { calculateTotalScore } from '../utils/calculations';
 

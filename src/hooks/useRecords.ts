@@ -1,4 +1,4 @@
-import { AppState, LearningGoal, DailyRecord, Reward } from '../types';
+import type { AppState, LearningGoal, DailyRecord, Reward } from '../types';
 
 export const useRecords = (
   state: AppState,
