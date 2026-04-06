@@ -35,7 +35,7 @@ export const KidCard = ({
       <div className="flex justify-between items-center mb-4">
         <div>
           <h3 className="text-xl font-bold">{kid.name}</h3>
-          <p className="text-gray-600">{kid.grade}{kid.semester}</p>
+          <p className="text-gray-600">{kid.grade} {kid.semester}</p>
         </div>
         <div className="text-right">
           <div className="text-3xl font-bold text-green-600">{kid.totalScore}</div>
