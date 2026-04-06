@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Reward } from '../types';
+import type { Reward } from '../types';
 
 interface RewardModalProps {
   isOpen: boolean;
@@ -69,7 +69,7 @@ export const RewardModal = ({ isOpen, kidName, totalScore, onClose, onAdd }: Rew
                     name="tier"
                     value={t.value}
                     checked={tier === t.value}
-                    onChange={() => setTier(t.value as any)}
+                    onChange={() => setTier(t.value as 'ten' | 'hundred' | 'threeHundred')}
                     className="sr-only"
                   />
                   {t.label}
